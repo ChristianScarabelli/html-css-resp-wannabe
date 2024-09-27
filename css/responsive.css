@@ -22,6 +22,10 @@
     }
 
     /* LESSONS SECTION  */
+    .lessons {
+        padding-bottom: 55px;
+    }
+
     .lessons .row {
         flex-flow: column;
         align-items: center;
@@ -29,6 +33,37 @@
     }
 
     .lessons .col {
+        width: 100%;
+    }
+
+    /* STEPS SECTION  */
+    .steps {
+        margin: 0px;
+        padding: 55px 0px;
+    }
+
+    .steps .row {
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+    
+    .steps .col {
+        width: 100%;
+    }
+
+    /* WHY US SECTION  */
+    .why-us {
+        background-color: rgb(34, 34, 34);
+        margin-bottom: 0px;
+        padding: 55px 0px;
+    }
+
+    .why-us .row {
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+    
+    .why-us .col {
         width: 100%;
     }
 }
