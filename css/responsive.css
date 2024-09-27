@@ -1,2 +1,35 @@
 /* MEDIA QUERIES DESKTOP FIRST */
 
+/* non far comparire la scrollbar orizzontale. */
+/* LARGE DEVICES  */
+@media (min-width: 768px) and (max-width: 1160px) {
+   
+}
+
+/* TABLET  */
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 768px;
+    }
+}
+
+/* MOBILE  */
+@media (max-width: 480px) {
+
+    .container {
+        max-width: 480px;
+    }
+
+    /* LESSONS SECTION  */
+    .lessons .row {
+        flex-flow: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .lessons .col {
+        width: 100%;
+    }
+}
+
