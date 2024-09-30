@@ -1,16 +1,19 @@
 /* MEDIA QUERIES DESKTOP FIRST */
 
-/* non far comparire la scrollbar orizzontale. */
-/* LARGE DEVICES  */
-
 
 /* TABLET  */
 @media (max-width: 768px) {
     .container {
-        max-width: 768px;
+        max-width: 1140px;
+        width: 100%;
     }
 }
+/* oppure
+.container {
+    max-width: 100%;
+} */
 
+/* LARGE DEVICES  */
 @media (min-width: 768px) and (max-width: 1160px) {
     .container {
         max-width: 100%;
@@ -21,7 +24,12 @@
 @media (max-width: 480px) {
 
     .container {
-        max-width: 480px;
+        max-width: 100%;
+    }
+
+    .row {
+        flex-wrap: wrap;
+        gap: 100px;
     }
 
     /* LESSONS SECTION  */
@@ -32,10 +40,11 @@
     .lessons .row {
         flex-flow: column;
         align-items: center;
-        gap: 100px;
     }
 
-    .lessons .col {
+    .lessons .col,
+    .steps .col,
+    .why-us .col {
         width: 100%;
     }
 
@@ -45,29 +54,11 @@
         padding: 55px 0px;
     }
 
-    .steps .row {
-        flex-wrap: wrap;
-        gap: 100px;
-    }
-    
-    .steps .col {
-        width: 100%;
-    }
-
     /* WHY US SECTION  */
     .why-us {
         background-color: rgb(34, 34, 34);
         margin-bottom: 0px;
         padding: 55px 0px;
-    }
-
-    .why-us .row {
-        flex-wrap: wrap;
-        gap: 100px;
-    }
-    
-    .why-us .col {
-        width: 100%;
     }
 }
 
